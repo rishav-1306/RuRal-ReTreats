@@ -893,6 +893,49 @@ body {
     background: linear-gradient(to right, #0056b3, #003f7f);
     transform: translateY(-3px);
     } */
+/* Add this to your homestays.css file */
+
+/* Make room for the new share icons */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wra p on smaller screens*/
+    gap: 15px; /* Adds space between all items */
+}
+
+/* Container for the share buttons */
+.social-share {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+}
+
+.social-share .share-btn {
+    color: #777; /* A neutral gray color */
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add a hover effect to make them interactive */
+.social-share .share-btn:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    color: #007bff; /* A general highlight color */
+}
+
+/* You can also add brand-specific hover colors */
+.social-share .share-btn .fa-facebook-f:hover {
+    color: #1877F2; /* Facebook blue */
+}
+
+.social-share .share-btn .fa-twitter:hover {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.social-share .share-btn .fa-whatsapp:hover {
+    color: #25D366; /* WhatsApp green */
+}
 
 .filters-container .apply-filters-btn:hover {
   background-color: #041e38;
